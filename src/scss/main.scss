@@ -26,13 +26,14 @@
       background-color: $greyHamburger;
       padding-right: 16px;
       transition: all 300ms ease-in-out;
-      transform-origin: left center;
+      transform-origin: 2px 2.2px;
 
       &:not(:last-child) {
         margin-bottom: 5px;
       }
     }
     &__open {
+      
       > span:first-child {
         transform: rotate(45deg);
       }
@@ -44,11 +45,14 @@
       }
     }
   }
-  &__span {
+  
+
+  &__dot {
     color: $pink-color;
     width: 100px;
   }
 }
+
 
 .hero__wrapper {
   padding: 24px 60px;

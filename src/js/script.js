@@ -12,3 +12,19 @@
 //   bee.innerText = 'buzz';
 //   document.body.appendChild(bee);
 // }, 500);
+
+const btnHamburger = document.querySelector('#btnHamburger');
+
+
+btnHamburger.addEventListener('click', function() {
+    console.log('click hamburger');
+if(btnHamburger.classList.contains('mobile-header__menu__open')){
+    btnHamburger.classList.remove('mobile-header__menu__open');
+
+}else
+{btnHamburger.classList.add('mobile-header__menu__open');
+}
+    
+});
+
+

@@ -2,8 +2,6 @@
 @import 'globals';
 
 .mobile-header {
-  
-
   &__nav {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -14,55 +12,43 @@
     box-shadow: 1px 2px rgb(245, 242, 242);
   }
 
-
-&__logo {
-  color: $blue-color;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 24px;
-}
-&__menu  {
-  
-    >span {
+  &__logo {
+    color: $blue-color;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+  }
+  &__menu {
+    > span {
       display: block;
-    width: 24px;
-    height: 2px;
-    background-color: $greyHamburger;
-    padding-right: 16px;
-    transition: all 300ms ease-in-out;
-    transform-origin: left center;
+      width: 24px;
+      height: 2px;
+      background-color: $greyHamburger;
+      padding-right: 16px;
+      transition: all 300ms ease-in-out;
+      transform-origin: left center;
 
-    &:not(:last-child){
-      margin-bottom: 5px;
-  
-      
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
+    }
+    &__open {
+      > span:first-child {
+        transform: rotate(45deg);
+      }
+      > span:nth-child(2) {
+        opacity: 0;
+      }
+      > span:last-child {
+        transform: rotate(-45deg);
+      }
     }
   }
-    &__open {
-      >span:first-child {
-        transform: rotate(45deg);
-
-      }
-      >span:nth-child(2) {
-        opacity: 0;
-
-      }
-      >span:last-child {
-        transform: rotate(-45deg);
-
-      }
-    }
-  
-
+  &__span {
+    color: $pink-color;
+    width: 100px;
+  }
 }
-&__span {
-  color: $pink-color;
-  width: 100px;
-}
-}
-
-
-
 
 .hero__wrapper {
   padding: 24px 60px;
@@ -212,52 +198,45 @@
   background-color: $background-purple;
   padding-bottom: 80px;
 
-&__title {
-  font-size: 36px;
-  color: $lightgrey;
-  text-align: center;
-  padding-top: 48px;
-  line-height: 54px;
-}
-&__text {
-  color: $lightgrey;
-  font-size: 14px;
-  text-align: center;
-  line-height: 21px;
-  padding-top: 8px;
-  font-weight: 300;
-  padding-bottom: 16px;
-}
-&__link:link {
-  color: $pink-link;
-  text-align: center;
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 300;
-  text-decoration: underline $pink-link;
-  display: block;
-  padding-bottom: 40px;
-  cursor: pointer;
-  
+  &__title {
+    font-size: 36px;
+    color: $lightgrey;
+    text-align: center;
+    padding-top: 48px;
+    line-height: 54px;
+  }
+  &__text {
+    color: $lightgrey;
+    font-size: 14px;
+    text-align: center;
+    line-height: 21px;
+    padding-top: 8px;
+    font-weight: 300;
+    padding-bottom: 16px;
+  }
+  &__link:link {
+    color: $pink-link;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 300;
+    text-decoration: underline $pink-link;
+    display: block;
+    padding-bottom: 40px;
+    cursor: pointer;
+  }
+  &__link:visited {
+    color: $pink-link;
+    text-align: center;
+    cursor: pointer;
+  }
 
-}
-&__link:visited {
-  color: $pink-link;
-  text-align: center;
-  cursor: pointer;
-
-}
-
-&__card {
-padding: 24px 24px;
-background-color: #ffffff;
-margin-bottom: 44px ;
-display: block;
-
-
-}
-
-
+  &__card {
+    padding: 24px 24px;
+    background-color: #ffffff;
+    margin-bottom: 44px;
+    display: block;
+  }
 }
 
 .card__img {
@@ -266,9 +245,6 @@ display: block;
   margin-left: auto;
   margin-right: auto;
   width: 60%;
-  
-  
-
 }
 .card-title {
   font-size: 18px;
@@ -285,8 +261,6 @@ display: block;
   display: block;
   font-weight: 600;
   padding-bottom: 40px;
-  
-  
 }
 .card-element {
   padding-top: 23px;
@@ -297,25 +271,24 @@ display: block;
   background-color: $pink-subscribe;
   display: grid;
   grid-template-rows: auto auto auto;
-  padding:  64px 70px 48px;
+  padding: 64px 70px 48px;
 
-  &-text{
+  &-text {
     color: white;
     line-height: 24px;
     padding-bottom: 16px;
     font-weight: 300;
-
   }
 
   &-input {
     background-color: $pink-subscribe;
     border: none;
     padding-bottom: 1px;
-    border-bottom:  1px solid white;
+    border-bottom: 1px solid white;
     color: white;
   }
   &-input::placeholder {
-    color: rgba(225,225,225,0.7);
+    color: rgba(225, 225, 225, 0.7);
     font-size: 16px;
     font-family: 'Roboto';
   }
@@ -336,26 +309,21 @@ display: block;
 .follow-section {
   display: grid;
   grid-template-rows: auto auto;
-  padding:40px;
+  padding: 40px;
   text-align: center;
 
   &__text {
-    color:#1e266d;
+    color: #1e266d;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0px;
     padding-bottom: 16px;
-    
   }
-  
-  
 }
 .fa-brands {
- color: #1e266d;
- padding-left: 9px;
-  
+  color: #1e266d;
+  padding-left: 9px;
 }
-
 
 .footer {
   padding: 32px;
@@ -363,9 +331,8 @@ display: block;
 
   &-logo {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     align-items: flex-start;
-    
   }
   &-logo :nth-child(2) {
     align-self: flex-end;
@@ -381,7 +348,6 @@ display: block;
     padding-bottom: 14px;
     font-weight: 300;
     padding-top: 32px;
-
   }
 
   &-content {
@@ -390,17 +356,14 @@ display: block;
     font-size: 14px;
     line-height: 16px;
   }
-  
+
   &-content a {
     color: $lightgrey;
     text-decoration: none;
     padding-top: 16px;
     font-weight: 300;
-    
   }
 }
-
-
 
 .main__logo {
   color: $blue-color;

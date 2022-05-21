@@ -1,0 +1,43 @@
+.expansion-panel.expansion-panel-typewriters {
+  border-top: 1px solid #fff;
+  cursor: pointer;
+
+  .expansion-panel__header {
+    display: flex;
+
+    .expansion-panel__header-image-wrapper {
+      width: 30px;
+      display: flex;
+      align-items: center;
+
+      img {
+        height: max-content;
+      }
+      .expansion-panel__header-img-plus {
+        display: block;
+      }
+      .expansion-panel__header-img-minus {
+        display: none;
+      }
+    }
+  }
+  .expansion-panel__content {
+    display: none;
+  }
+}
+.expansion-panel.expansion-panel-typewriters.expansion-panel--active {
+  .expansion-panel__header {
+    .expansion-panel__header-image-wrapper {
+      .expansion-panel__header-img-plus {
+        border: 3px solid black;
+        display: none;
+      }
+      .expansion-panel__header-img-minus {
+        display: block;
+      }
+    }
+  }
+  .expansion-panel__content {
+    display: block;
+  }
+}

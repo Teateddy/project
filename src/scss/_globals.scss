@@ -33,3 +33,24 @@ body {
   font-family: 'Roboto';
   letter-spacing: 1px;
 }
+
+a, a:visited, a:hover {
+  text-decoration: none;
+}
+
+//visibility
+
+
+// .hide-for-mobile {
+// @include breakpoint-down(medium){
+//   display: none;
+// }
+
+
+// }
+// .hide-for-desktop {
+//    @include breakpoint-up(large){
+//      display: none;
+//    } 
+// }
+

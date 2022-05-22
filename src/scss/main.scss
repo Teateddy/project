@@ -420,11 +420,18 @@
   }
 }
 
+.redtype {
+  display: flex;
+  flex-direction: column;
+}
 @media (min-width: 1024px) {
   .main-header {
     display: block;
   }
   .mobile-header {
     display: none;
+  }
+  .redtype {
+    flex-direction: row;
   }
 }

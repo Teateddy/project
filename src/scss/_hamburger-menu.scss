@@ -1,8 +1,7 @@
 #hamburger-menu {
   cursor: pointer;
-  height: 27px;
-  width: 27px;
-  margin: 50px;
+  height: 24px;
+  width: 24px;
   overflow: visible;
   position: relative;
   z-index: 2;
@@ -11,7 +10,7 @@
   span,
   span:before,
   span:after {
-    background: #111;
+    background: #787885;
     display: block;
     height: 2px;
     opacity: 1;

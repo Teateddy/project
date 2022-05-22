@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="scss/main.scss" />
     <script src="js/script.js" defer></script>
     <script src="js/expansion-panel.js" defer></script>
-    
+    <script src="js/hamburger-menu.js" defer></script>
+
     <script
       src="https://kit.fontawesome.com/89fc437f1e.js"
       crossorigin="anonymous"
@@ -15,37 +16,41 @@
     <title>B. Digital</title>
   </head>
 
-  <body> 
+  <body>
     <header class="mobile-header">
-     
       <nav class="mobile-header__nav">
         <a class="mobile-header__logo" href="#"
           >B<span class="mobile-header__dot">.</span>Digital</a
         >
 
-        <a href="#" id="btnHamburger" class="mobile-header__menu hide-for-desktop" >
+        <div id="hamburger-menu">
           <span></span>
-          <span></span>
-          <span></span>
-        </a>
+        </div>
       </nav>
-    </header>
-    <header    class="main-header hide-for-mobile"   >
-     <div class="main-header__nav">
-      <a class="main-header__logo" href="#">
-        <img src="assets/images/Bmain.png" alt="">
-      <img src="assets/images/dotmain.png" alt="">
-       <img src="assets/images/typemain.png" alt=""></a>
-      <div class="main-header__nav__links">
-        <a class="main-header__nav__link" href="#">Products</a>
-        <a class="main-header__nav__link" href="#">Services</a>
-        <a class="main-header__nav__link" href="#">About us</a>
-        <a class="main-header__nav__link" href="#">Careers</a>
-        <a class="main-header__nav__link" href="#">Blog</a>
-        <a class="main-header__nav__link" href="#">Contact</a>
+
+      <div id="hamburger-menu-content">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
       </div>
-      <button class="buy__btn main-header__btn ">Shop now</button>
-     
+    </header>
+    <header class="main-header hide-for-mobile">
+      <div class="main-header__nav">
+        <a class="main-header__logo" href="#">
+          <img src="assets/images/Bmain.png" alt="" />
+          <img src="assets/images/dotmain.png" alt="" />
+          <img src="assets/images/typemain.png" alt=""
+        /></a>
+        <div class="main-header__nav__links">
+          <a class="main-header__nav__link" href="#">Products</a>
+          <a class="main-header__nav__link" href="#">Services</a>
+          <a class="main-header__nav__link" href="#">About us</a>
+          <a class="main-header__nav__link" href="#">Careers</a>
+          <a class="main-header__nav__link" href="#">Blog</a>
+          <a class="main-header__nav__link" href="#">Contact</a>
+        </div>
+        <button class="buy__btn main-header__btn">Shop now</button>
       </div>
     </header>
 
